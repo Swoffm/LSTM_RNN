@@ -144,32 +144,32 @@ class RNN:
         return X_train
     
     def making_neurons(X_train, y_train, 
-                       number_of_nuerons_first, epoch_size):
+                       number_of_neurons_first, epoch_size):
         
         X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
         
         '''=================MAKE DROPOUT RATE AND BATCH SIZE ALL BASED ON USERINPUT!!!=================='''
         # Initialising the RNN
         regressor = Sequential() 
-        #THIS HIDDEN LAYER NUERONS IS BASED ON THE IDEA THAT THE NUMBER OF
+        #THIS HIDDEN LAYER NEURONS IS BASED ON THE IDEA THAT THE NUMBER OF
         #NUERONS IN THE HIDDEN LAYERS NEEDS TO BE 2/3 OF THE FIRST LAYER
-        hidden_layer_nuerons = round(number_of_nuerons_first * (2/3))
+        hidden_layer_neurons = round(number_of_neurons_first * (2/3))
 
         # Adding the first LSTM layer and some Dropout regularisation
-        regressor.add(LSTM(units = number_of_nuerons_first, return_sequences = True, input_shape = (X_train.shape[1], 1)))
-        #20% of the nuerons will be ignored 
+        regressor.add(LSTM(units = number_of_neurons_first, return_sequences = True, input_shape = (X_train.shape[1], 1)))
+        #20% of the neurons will be ignored 
         regressor.add(Dropout(0.2))
 
         # Adding a second LSTM layer and some Dropout regularisation
-        regressor.add(LSTM(units = hidden_layer_nuerons, return_sequences = True))
+        regressor.add(LSTM(units = hidden_layer_neurons, return_sequences = True))
         regressor.add(Dropout(0.2))
 
         # Adding a third LSTM layer and some Dropout regularisation
-        regressor.add(LSTM(units = hidden_layer_nuerons, return_sequences = True))
+        regressor.add(LSTM(units = hidden_layer_neurons, return_sequences = True))
         regressor.add(Dropout(0.2))
 
         # Adding a fourth LSTM layer and some Dropout regularisation
-        regressor.add(LSTM(units = hidden_layer_nuerons))
+        regressor.add(LSTM(units = hidden_layer_neurons))
         regressor.add(Dropout(0.2))
 
         # Adding the output layer
