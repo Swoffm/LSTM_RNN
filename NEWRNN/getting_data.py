@@ -152,7 +152,7 @@ class RNN:
         # Initialising the RNN
         regressor = Sequential() 
         #THIS HIDDEN LAYER NEURONS IS BASED ON THE IDEA THAT THE NUMBER OF
-        #NUERONS IN THE HIDDEN LAYERS NEEDS TO BE 2/3 OF THE FIRST LAYER
+        #NEURONS IN THE HIDDEN LAYERS NEEDS TO BE 2/3 OF THE FIRST LAYER
         hidden_layer_neurons = round(number_of_neurons_first * (2/3))
 
         # Adding the first LSTM layer and some Dropout regularisation

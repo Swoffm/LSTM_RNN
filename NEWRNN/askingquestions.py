@@ -63,12 +63,12 @@ def questions():
             '''NEED TO ASK HOW MANY NUERONS TO BE ENTERED IN THE FIRST LAYER THIS IS UP TO THE USER
             THE NEXT LAYERS ARE ROUNDED 2/3 NUERONS IN THE HIDDEN LAYERS.'''
         
-            number_of_nuerons_first = int(input('How many neurons would you like in the first layer: '))
+            number_of_neurons_first = int(input('How many neurons would you like in the first layer: '))
             '''We now need to ask about the number of epochs to be run in the network'''
             epoch_size = int(input('How many epochs would you like: '))
         
             regressor = RNN.making_neurons(X_train, y_train, 
-                                            number_of_nuerons_first,epoch_size)
+                                            number_of_neurons_first,epoch_size)
         
             #Question about asking to contue training or not
             """Work on looping it back around"""
