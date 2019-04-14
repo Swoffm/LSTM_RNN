@@ -8,7 +8,7 @@ Created on Mon Apr  8 19:42:41 2019
 
 from askingquestions import questions
 
-from question_logic import question_logic
+#from question_logic import question_logic
 
 questions()
   
