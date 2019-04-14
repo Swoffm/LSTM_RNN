@@ -21,7 +21,6 @@ from keras.layers import Dropout
 class RNN:
 
     def Stock_Data(ticker):
-        data_source = 'alphavantage'
 
         
     # ====================== Loading Data from Alpha Vantage ==================================
