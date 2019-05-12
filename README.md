@@ -1,11 +1,3 @@
-# Current Goals
-Make a better prediction Network.
-Have a checking system for the questions.
-Be able to input more than column at a time.
-Make a way to keep training instead of predicting.
-Make a way to skip to predicting instead of train.
-Later we will need to move the data to an online data base. Espically the predicting varibale.
-After moving the prediciting variable to the data base. Make a moblie app that can grab the varible and make predictions from your phone.
+# READ ME
 
-Gavin you are the most awesome Gavin in the whole world!
-
+The file marked STOCK RNN contains a list of projects that I worked on while I was getting a better understanding for what RNNs do and how they operate. The file marked NEWRNN is my updated and improved version. To run the file you must go to the file named MAINSTART. The goal of this project was to make a basic stock market predictor that was easy to use and one that contained some versatility. The classes in the file are barbaric and sloppy requiring major improvement however, due to the fact that this was a course project I was a little bit on a time crunch. Nevertheless it still requires improvements that will be worked on in the future. The end goal is to have a network that can accurately predict a trend when trained properly and a network that is user friendly, easily accessible and has great versatility.
