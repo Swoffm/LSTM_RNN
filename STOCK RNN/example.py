@@ -38,7 +38,7 @@ data_source = 'alphavantage'
 if data_source == 'alphavantage':
     # ====================== Loading Data from Alpha Vantage ==================================
 
-    api_key = 'Q4UT1U6TTKR2FTY2'
+    api_key = ''
 
     # American Airlines stock market prices
     ticker = "GOOGL"
