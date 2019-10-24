@@ -15,7 +15,7 @@ import pandas_datareader.data as web
 class RNN:
     
     def get_data():
-        API_KEY = 'Q4UT1U6TTKR2FTY2'
+        API_KEY = ''
         r = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=GOOGL&interval=1min&outputsize=full&apikey=' + API_KEY)
         result = r.json()
      
