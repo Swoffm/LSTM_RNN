@@ -21,12 +21,11 @@ from keras.layers import Dropout
 class RNN:
 
     def Stock_Data(ticker):
-        data_source = 'alphavantage'
 
         
     # ====================== Loading Data from Alpha Vantage ==================================
 
-        api_key = 'Q4UT1U6TTKR2FTY2'
+        api_key = ''
 
     # American Airlines stock market prices
         
