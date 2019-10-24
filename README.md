@@ -1,23 +1,22 @@
 # READ ME
 
 First, before you start make sure you have all of the following libaries downloaded
-
-from pandas_datareader import data
-import matplotlib.pyplot as plt
-import pandas as pd
-import datetime as dt
-import urllib.request, json
-import os
-import tensorflow as tf # This code has been tested with TensorFlow 1.6
-from sklearn.preprocessing import MinMaxScaler
-import json
-import requests
 # Importing the libraries
-import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM
-from keras.layers import Dropout
+from pandas_datareader import data<br/>
+import matplotlib.pyplot as plt<br/>
+import pandas as pd<br/>
+import datetime as dt<br/>
+import urllib.request, json<br/>
+import os<br/>
+import tensorflow as tf # This code has been tested with TensorFlow 1.6<br/>
+from sklearn.preprocessing import MinMaxScaler<br/>
+import json<br/>
+import requests<br/>
+import numpy as np<br/>
+from keras.models import Sequential<br/>
+from keras.layers import Dense<br/>
+from keras.layers import LSTM<br/>
+from keras.layers import Dropout<br/>
 
 Secondly, you need to create an API key at https://www.alphavantage.co
 
