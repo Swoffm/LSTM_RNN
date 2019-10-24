@@ -14,7 +14,7 @@ from fluid import fluid
 
 
 def questions():
-    #api_key = 'Q4UT1U6TTKR2FTY2'
+    
    
     #==========ASKING IF THE USER WOULD LIKE TO TRAIN THE DATA SET OR MAKE A PREDICTION==========
         number_of_days = fluid.number_of_days()
